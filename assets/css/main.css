@@ -1,16 +1,35 @@
 @import '../fonts/fonts.css';
-@import './variables.css';
 @import './normalize.css';
+@import './variables.scss';
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
+@import './common.css';
 
-html {
-    height: 100%;
-}
+@import '../../03-lection1/01-button/button.scss';
+@import '../../03-lection1/02-accordion/accordion.scss';
 
-body {
-    margin: 0;
-    height: 100%;
-}
+@import '../../04-lection2/01-histogram/histogram.scss';
+@import '../../04-lection2/02-skeleton/skeleton.scss';
+
+@import '../../05-lection3/01-tooltip/tooltip.scss';
+@import '../../05-lection3/02-modal/modal.scss';
+@import '../../05-lection3/03-calendar/calendar.scss';
+
+@import '../../06-lection4/01-avatar/avatar.scss';
+@import '../../06-lection4/02-background-image/background-image.scss';
+@import '../../06-lection4/03-srcset/srcset.scss';
+
+@import '../../07-lection5/01-checkbox/checkbox.scss';
+@import '../../07-lection5/02-radio/radio.scss';
+@import '../../07-lection5/03-toggler/toggler.scss';
+@import '../../07-lection5/04-input/input.scss';
+
+@import '../../components/accordion-wrapper/accordion-wrapper.scss';
+@import '../../components/card/card.scss';
+@import '../../components/container/container.scss';
+@import '../../components/inner-page/inner-page.scss';
+@import '../../components/page-divider/page-divider.scss';
+@import '../../components/page-footer/page-footer.scss';
+@import '../../components/page-header/page-header.scss';
+@import '../../components/sidebar-nav/sidebar-nav.scss';
+@import '../../components/tabs/tabs.scss';
+@import '../../components/top-header/top-header.scss';

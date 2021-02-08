@@ -1,0 +1,28 @@
+.top-header {
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+
+        &-link {
+            display: block;
+            font-size: 0;
+            line-height: 0;
+            color: var(--dark-primary);
+        }
+
+        &-icon {
+            width: 100px;
+            height: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .top-header {
+        justify-content: flex-start;
+        min-height: 80px;
+    }
+}

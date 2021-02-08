@@ -1,0 +1,73 @@
+.toggler {
+    display: flex;
+    align-items: center;
+
+    &__control {
+        width: 1px;
+        height: 1px;
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__state {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0 1px;
+        width: 52px;
+        height: 28px;
+        border: 1px solid var(--main-secondary-darken2);
+        border-radius: 16px;
+        background-color: var(--main);
+        cursor: pointer;
+    }
+
+    &__dot {
+        position: relative;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        background-color: var(--main-secondary-darken2);
+        border-radius: 50%;
+        transition: left 200ms;
+    }
+
+    &__label {
+        padding-left: 12px;
+        cursor: pointer;
+    }
+
+    &__control {
+        &:disabled ~ .toggler__state {
+            background-color: var(--main-secondary-darken2);
+            border-color: var(--main-secondary-darken2);
+            cursor: default;
+
+            .toggler__dot {
+                background-color: var(--main-secondary-darken3);
+            }
+        }
+
+        &:disabled ~ .toggler__label {
+            color: var(--main-secondary-darken2);
+            cursor: default;
+        }
+
+        &:focus ~ .toggler__label {
+            text-decoration: underline;
+        }
+
+        &:enabled:checked ~ .toggler__state {
+            border-color: var(--accent-primary);
+            background-color: var(--accent-primary);
+
+            .toggler__dot {
+                left: 24px;
+                background-color: var(--main);
+            }
+        }
+
+    }
+
+}
