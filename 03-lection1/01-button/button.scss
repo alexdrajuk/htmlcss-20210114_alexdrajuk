@@ -10,6 +10,7 @@
     font-size: 16px;
     line-height: 1.1;
     vertical-align: middle;
+    border: 1px solid var(--main);
 
     &:hover {
         cursor: pointer;
@@ -25,34 +26,40 @@
         background-color: var(--accent-primary);
         color: var(--main);
         transition: background 200ms ease-in-out;
+        border-color: var(--accent-primary);
 
         &:hover {
             background-color: var(--accent-primary-darken1);
+            border-color: var(--accent-primary-darken1);
         }
 
         &:disabled {
             background-color: var(--accent-primary);
+            border-color: var(--accent-primary);
         }
     }
 
     &_secondary {
         background-color: var(--accent-secondary);
+        border-color: var(--accent-secondary);
         color: var(--main);
         transition: background 200ms ease-in-out;
 
         &:hover {
             background-color: var(--accent-secondary-darken1);
+            border-color: var(--accent-secondary-darken1);
         }
 
         &:disabled {
-            background-color: var(--main);
+            background-color: var(--accent-secondary);
+            border-color: var(--accent-secondary);
         }
     }
 
     &_alternate {
         background-color: var(--main);
         color: var(--main-secondary-darken4);
-        border: 1px solid var(--main-secondary-darken3);
+        border-color: var(--main-secondary-darken3);
         transition: border-color 200ms ease-in-out;
 
         &:hover {

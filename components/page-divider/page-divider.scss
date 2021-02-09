@@ -3,4 +3,11 @@
     height: 1px;
     background-color: var(--main-secondary-darken2);
     border-style: none;
+
+    &_through {
+        position: relative;
+        width: 120%;
+        display: block;
+        right: 10%;
+    }
 }
