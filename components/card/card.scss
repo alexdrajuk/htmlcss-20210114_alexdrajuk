@@ -1,9 +1,9 @@
 .card {
     box-sizing: border-box;
     display: flex;
+    flex: 1 1 100%;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(50% - 8px);
     min-height: 200px;
     margin-bottom: 16px;
     border-radius: 12px;
@@ -13,6 +13,21 @@
 
     &__body {
         padding: 10px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &_with-columns {
+            justify-content: space-around;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     &__footer {
@@ -28,11 +43,25 @@
     }
 }
 
+@media screen and (min-width: $tablet-width) {
+    .card {
+        flex: 0 1 calc(50% - 8px);
+    }
+}
+
 @media screen and (min-width: $desktop-width) {
     .card {
-        width: 350px;
+        flex-basis: calc(100% / 3 - 16px);
         min-height: 367px;
         margin-bottom: 30px;
+
+        &_large {
+            flex-basis: calc(50% - 16px);
+        }
+    
+        &_largest {
+            flex-basis: 100%;
+        }
 
         &__body {
             padding: 30px;

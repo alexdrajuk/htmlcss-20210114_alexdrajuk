@@ -28,6 +28,7 @@
 @import '../../components/container/container.scss';
 @import '../../components/inner-page/inner-page.scss';
 @import '../../components/page-divider/page-divider.scss';
+@import '../../components/page-content/page-content.scss';
 @import '../../components/page-footer/page-footer.scss';
 @import '../../components/page-header/page-header.scss';
 @import '../../components/sidebar-nav/sidebar-nav.scss';

@@ -3,6 +3,33 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="./build/index.css">
+        <style>
+            .histogram,
+            .skeleton {
+                flex-grow: 1;
+            }
+            .accordion {
+                width: 100%;
+            }
+            .calendar {
+                width: 200px;
+            }
+            .button {
+                margin-bottom: 8px;
+                
+            }
+            .button:last-child {
+                margin-bottom: 1px;
+            }
+            .radio,
+            .checkbox {
+                margin-bottom: 8px;
+            }
+            .radio:last-child,
+            .checkbox:last-child {
+                margin-bottom: 0;
+            }
+        </style>
     </head>
     <body class="page">
         <header class="page-header">
@@ -19,7 +46,6 @@
                 <h1 class="page-header__title">Reusable component library </h1>
             </div>
         </header>
-        
         <main class="tabs">
             <input class="tabs__radio" type="radio" name="tabs" id="tab-1" checked>
             <input class="tabs__radio" type="radio" name="tabs" id="tab-2">
@@ -36,29 +62,140 @@
                 </li>
             </ul>
             <hr class="page-divider">
-            <div class="tabs__content">
+            <div class="page-content tabs__content">
+                <!-- Tab 1 -->
+                <!-- Tab 1 -->
                 <!-- Tab 1 -->
                 <div class="container tabs__tab" data-tab="tab-1">
                     <a href="#" class="card">
-                        <div class="card__body"></div>
+                        <div class="card__body">
+                            <div class="tooltip tooltip_opened">
+                                <div class="tooltip__anchor">
+                                    <svg class="tooltip__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#svg-sprite__tooltip"/>
+                                    </svg>
+                                </div>
+                                <div class="tooltip__body">Helper Text</div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Tooltip</div>
                         </div>
                     </a>
                     <a href="#" class="card">
-                        <div class="card__body"> </div>
+                        <div class="card__body card__body_with-columns">
+                            <div class="card__column">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__control" name="languge" value="english" checked>
+                                    <div class="checkbox__state">
+                                        <svg class="checkbox__icon">
+                                            <use xlink:href="#svg-sprite__check">
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__label">English</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__control" name="languge" value="russian">
+                                    <div class="checkbox__state">
+                                        <svg class="checkbox__icon">
+                                            <use xlink:href="#svg-sprite__check">
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__label">Russian</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__control" name="languge" value="chinese" disabled>
+                                    <div class="checkbox__state">
+                                        <svg class="checkbox__icon">
+                                            <use xlink:href="#svg-sprite__check">
+                                        </svg>
+                                    </div>
+                                    <span class="checkbox__label">Chinese</span>
+                                </label>
+                            </div>
+                            <div class="card__column">
+                                <label class="radio">
+                                    <input class="radio__control" type="radio" name="language" value="english" checked>
+                                    <div class="radio__state">
+                                        <div class="radio__dot"></div>
+                                    </div>
+                                    <span class="radio__label">English</span>
+                                </label>
+                                <label class="radio">
+                                    <input class="radio__control" type="radio" name="language" value="russian">
+                                    <div class="radio__state">
+                                        <div class="radio__dot"></div>
+                                    </div>
+                                    <span class="radio__label">Russian</span>
+                                </label>
+                                <label class="radio">
+                                    <input class="radio__control" type="radio" name="language" value="chinese" disabled>
+                                    <div class="radio__state">
+                                        <div class="radio__dot"></div>
+                                    </div>
+                                    <span class="radio__label">Chinese</span>
+                                </label>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Custom form elements</div>
                         </div>
                     </a>
-                    <a href="#" class="card">
-                        <div class="card__body"></div>
+                    <a href="./pages/calendar.html" class="card">
+                        <div class="card__body">
+                            <div class="calendar">
+                                <div class="calendar__month">January 2021</div>
+                                <div class="calendar__days">
+                                    <div class="calendar__day">Mon</div>
+                                    <div class="calendar__day">Tue</div>
+                                    <div class="calendar__day">Wed</div>
+                                    <div class="calendar__day">Thu</div>
+                                    <div class="calendar__day">Fri</div>
+                                    <div class="calendar__day">Sat</div>
+                                    <div class="calendar__day">Sun</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__date">1</div>
+                                    <div class="calendar__date">2</div>
+                                    <div class="calendar__date">3</div>
+                                    <div class="calendar__date">4</div>
+                                    <div class="calendar__date">5</div>
+                                    <div class="calendar__date">6</div>
+                                    <div class="calendar__date">7</div>
+                                    <div class="calendar__date">8</div>
+                                    <div class="calendar__date">9</div>
+                                    <div class="calendar__date">10</div>
+                                    <div class="calendar__date">11</div>
+                                    <div class="calendar__date">12</div>
+                                    <div class="calendar__date">13</div>
+                                    <div class="calendar__date">14</div>
+                                    <div class="calendar__date">15</div>
+                                    <div class="calendar__date">16</div>
+                                    <div class="calendar__date">17</div>
+                                    <div class="calendar__date calendar__date_accent">18</div>
+                                    <div class="calendar__date calendar__date_highlight">19</div>
+                                    <div class="calendar__date calendar__date_highlight">20</div>
+                                    <div class="calendar__date calendar__date_highlight">21</div>
+                                    <div class="calendar__date calendar__date_highlight">22</div>
+                                    <div class="calendar__date calendar__date_accent">23</div>
+                                    <div class="calendar__date">24</div>
+                                    <div class="calendar__date">25</div>
+                                    <div class="calendar__date">26</div>
+                                    <div class="calendar__date">27</div>
+                                    <div class="calendar__date">28</div>
+                                    <div class="calendar__date">29</div>
+                                    <div class="calendar__date">30</div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Calendar</div>
                         </div>
                     </a>
                     <a href="#" class="card">
-                        <div class="card__body"></div>
+                        <div class="card__body">
+                            <button class="button button_primary">Open modal</button>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Modal dialog</div>
                         </div>
@@ -101,31 +238,262 @@
                         </div>
                     </a>
                     <a href="#" class="card">
-                        <div class="card__body"></div>
+                        <div class="card__body">
+                            <div class="avatar">
+                                <div class="avatar__picture">
+                                    <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="Userpic" class="avatar__img" width="200" height="200">
+                                </div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Avatar</div>
                         </div>
                     </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <label class="input">
+                                <span class="input__label">Label</span>
+                                <div class="input__icons">
+                                    <svg class="input__icon input__icon_success">
+                                        <use xlink:href="#svg-sprite__success">
+                                    </svg>
+                                    <svg class="input__icon input__icon_error">
+                                        <use xlink:href="#svg-sprite__error">
+                                    </svg>
+                                </div>
+                                <input class="input__field" type="text" name="lastname" placeholder="placeholder">
+                            </label>
+                            <label class="input input_state-success">
+                                <span class="input__label">Label</span>
+                                <div class="input__icons">
+                                    <svg class="input__icon input__icon_success">
+                                        <use xlink:href="#svg-sprite__success">
+                                    </svg>
+                                    <svg class="input__icon input__icon_error">
+                                        <use xlink:href="#svg-sprite__error">
+                                    </svg>
+                                </div>
+                                <input class="input__field" type="text" name="lastname" placeholder="placeholder">
+                            </label>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Input field</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <div class="skeleton">
+                                <div class="skeleton__header">
+                                    <div class="skeleton__logo"></div>
+                                    <div class="skeleton__info">
+                                        <div class="skeleton__placeholder skeleton__placeholder_title"></div>
+                                        <div class="skeleton__placeholder skeleton__placeholder_subtitle"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__content">
+                                    <div class="skeleton__placeholder"></div>
+                                    <div class="skeleton__placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Skeleton</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <div class="card__column">
+                                <button class="button button_primary">Primary</button>
+                                <button class="button button_secondary">Secondary</button>
+                                <button class="button button_alternate">Alternate</button>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Button</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card card_largest">
+                        <div class="card__body">
+                            <details class="accordion-wrapper__item accordion" open>
+                                <summary class="accordion__summary">
+                                    Accordion item 1
+                                    <svg class="accordion__toggle">
+                                        <use xlink:href="#svg-sprite__arrow">
+                                    </svg>
+                                </summary>
+                                <p class="accordion__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </details>
+                            <details class="accordion-wrapper__item accordion">
+                                <summary class="accordion__summary">
+                                    Accordion item 2
+                                    <svg class="accordion__toggle">
+                                        <use xlink:href="#svg-sprite__arrow">
+                                    </svg>
+                                </summary>
+                                <p class="accordion__body">
+                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                </p>
+                            </details>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Accordion</div>
+                        </div>
+                    </a>
                 </div>
+                <!-- Tab 2 -->
+                <!-- Tab 2 -->
                 <!-- Tab 2 -->
                 <div class="container tabs__tab tabs__tab_better-align" data-tab="tab-2">
                     <a href="#" class="card">
-                        <div class="card__body"></div>
+                        <div class="card__body">
+                            <button class="button button_primary">Open modal</button>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Modal dialog</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <div class="skeleton">
+                                <div class="skeleton__header">
+                                    <div class="skeleton__logo"></div>
+                                    <div class="skeleton__info">
+                                        <div class="skeleton__placeholder skeleton__placeholder_title"></div>
+                                        <div class="skeleton__placeholder skeleton__placeholder_subtitle"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__content">
+                                    <div class="skeleton__placeholder"></div>
+                                    <div class="skeleton__placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Skeleton</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <div class="card__column">
+                                <button class="button button_primary">Primary</button>
+                                <button class="button button_secondary">Secondary</button>
+                                <button class="button button_alternate">Alternate</button>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Button</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <div class="tooltip tooltip_opened">
+                                <div class="tooltip__anchor">
+                                    <svg class="tooltip__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#svg-sprite__tooltip"/>
+                                    </svg>
+                                </div>
+                                <div class="tooltip__body">Helper Text</div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Tooltip</div>
                         </div>
                     </a>
                     <a href="#" class="card">
-                        <div class="card__body"></div>
+                        <div class="card__body">
+                            <div class="avatar">
+                                <div class="avatar__picture">
+                                    <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="Userpic" class="avatar__img" width="200" height="200">
+                                </div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Avatar</div>
                         </div>
                     </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <details class="accordion-wrapper__item accordion">
+                                <summary class="accordion__summary">
+                                    Accordion item 1
+                                    <svg class="accordion__toggle">
+                                        <use xlink:href="#svg-sprite__arrow">
+                                    </svg>
+                                </summary>
+                                <p class="accordion__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </details>
+                            <details class="accordion-wrapper__item accordion">
+                                <summary class="accordion__summary">
+                                    Accordion item 2
+                                    <svg class="accordion__toggle">
+                                        <use xlink:href="#svg-sprite__arrow">
+                                    </svg>
+                                </summary>
+                                <p class="accordion__body">
+                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                                </p>
+                            </details>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Accordion</div>
+                        </div>
+                    </a>
                 </div>
                 <!-- Tab 3 -->
+                <!-- Tab 3 -->
+                <!-- Tab 3 -->
                 <div class="container tabs__tab tabs__tab_better-align" data-tab="tab-3">
-                    <a href="#" class="card">
-                        <div class="card__body"></div>
+                    <a href="./pages/calendar.html" class="card">
+                        <div class="card__body">
+                            <div class="calendar">
+                                <div class="calendar__month">January 2021</div>
+                                <div class="calendar__days">
+                                    <div class="calendar__day">Mon</div>
+                                    <div class="calendar__day">Tue</div>
+                                    <div class="calendar__day">Wed</div>
+                                    <div class="calendar__day">Thu</div>
+                                    <div class="calendar__day">Fri</div>
+                                    <div class="calendar__day">Sat</div>
+                                    <div class="calendar__day">Sun</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="calendar__date">1</div>
+                                    <div class="calendar__date">2</div>
+                                    <div class="calendar__date">3</div>
+                                    <div class="calendar__date">4</div>
+                                    <div class="calendar__date">5</div>
+                                    <div class="calendar__date">6</div>
+                                    <div class="calendar__date">7</div>
+                                    <div class="calendar__date">8</div>
+                                    <div class="calendar__date">9</div>
+                                    <div class="calendar__date">10</div>
+                                    <div class="calendar__date">11</div>
+                                    <div class="calendar__date">12</div>
+                                    <div class="calendar__date">13</div>
+                                    <div class="calendar__date">14</div>
+                                    <div class="calendar__date">15</div>
+                                    <div class="calendar__date">16</div>
+                                    <div class="calendar__date">17</div>
+                                    <div class="calendar__date calendar__date_accent">18</div>
+                                    <div class="calendar__date calendar__date_highlight">19</div>
+                                    <div class="calendar__date calendar__date_highlight">20</div>
+                                    <div class="calendar__date calendar__date_highlight">21</div>
+                                    <div class="calendar__date calendar__date_highlight">22</div>
+                                    <div class="calendar__date calendar__date_accent">23</div>
+                                    <div class="calendar__date">24</div>
+                                    <div class="calendar__date">25</div>
+                                    <div class="calendar__date">26</div>
+                                    <div class="calendar__date">27</div>
+                                    <div class="calendar__date">28</div>
+                                    <div class="calendar__date">29</div>
+                                    <div class="calendar__date">30</div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card__footer">
                             <div class="card__title">Calendar</div>
                         </div>
@@ -165,6 +533,37 @@
                         </div>
                         <div class="card__footer">
                             <div class="card__title">Histogram</div>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__body">
+                            <label class="input">
+                                <span class="input__label">Label</span>
+                                <div class="input__icons">
+                                    <svg class="input__icon input__icon_success">
+                                        <use xlink:href="#svg-sprite__success">
+                                    </svg>
+                                    <svg class="input__icon input__icon_error">
+                                        <use xlink:href="#svg-sprite__error">
+                                    </svg>
+                                </div>
+                                <input class="input__field" type="text" name="lastname" placeholder="placeholder">
+                            </label>
+                            <label class="input input_state-success">
+                                <span class="input__label">Label</span>
+                                <div class="input__icons">
+                                    <svg class="input__icon input__icon_success">
+                                        <use xlink:href="#svg-sprite__success">
+                                    </svg>
+                                    <svg class="input__icon input__icon_error">
+                                        <use xlink:href="#svg-sprite__error">
+                                    </svg>
+                                </div>
+                                <input class="input__field" type="text" name="lastname" placeholder="placeholder">
+                            </label>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__title">Input field</div>
                         </div>
                     </a>
                 </div>

@@ -1,0 +1,10 @@
+.page-content {
+    background-color: var(--main-secondary-darken1);
+    padding: 22px 16px 55px;
+}
+
+@media screen and (min-width: $desktop-width) {
+    .page-content {
+        padding: 67px 0 175px;
+    }
+}

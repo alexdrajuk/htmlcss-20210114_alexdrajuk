@@ -58,11 +58,6 @@
 
     }
 
-    &__content {
-        background-color: var(--main-secondary-darken1);
-        padding: 22px 16px 55px;
-    }
-
     &__tab {
         display: none;
         flex-wrap: wrap;
@@ -85,10 +80,6 @@
             padding: 0;
             list-style: none;
             overflow-x: scroll;
-        }
-
-        &__content {
-            padding: 67px 0 175px;
         }
     }
 }
