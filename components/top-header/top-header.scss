@@ -18,11 +18,19 @@
             height: 32px;
         }
     }
+    &__btn-menu {
+        position: absolute;
+        left: 12px;
+    }
 }
 
 @media screen and (min-width: $desktop-width) {
     .top-header {
         justify-content: flex-start;
         min-height: 80px;
+
+        &__btn-menu {
+            display: none;
+        }
     }
 }

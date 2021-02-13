@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../build/index.css">
+    <title>Mobile menu</title>
+</head>
+<body>
+    <aside class="mobile-menu">
+        <div class="mobile-menu__modal">
+            <div class="mobile-menu__header">
+                <div class="btn-close mobile-menu__close">
+                    <svg class="btn-close__icon" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#svg-sprite__close">
+                    </svg>
+                </div>
+                <a class="mobile-menu__logo" href="#" title="Home page">
+                    <svg class="mobile-menu__logo-icon" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#svg-sprite__logo">
+                    </svg>
+                </a>
+            </div>
+            <div class="mobile-menu__body">
+                <hr class="page-divider">
+                <div class="mobile-menu__features">
+                    <label class="toggler mobile-menu__feature">
+                        <input class="toggler__control" type="checkbox" name="color mode" value="Dark mode" checked>
+                        <div class="toggler__state mobile-menu__feature-toggle">
+                            <div class="toggler__dot"></div>
+                        </div>
+                        <span class="toggler__label text text_m mobile-menu__feature-label">Dark mode</span>
+                    </label>
+                </div>
+                <hr class="page-divider">
+                <div class="mobile-menu__section">
+                    <h3 class="title title_s mobile-menu__section-title">Elements</h3>
+                    <ul class="mobile-menu__items">
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Avatar</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Custom form elements</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Button</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Tooltip</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="page-divider">
+                <div class="mobile-menu__section">
+                    <h3 class="title title_s mobile-menu__section-title">Containers</h3>
+                    <ul class="mobile-menu__items">
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Avatar</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Custom form elements</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Button</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="text text_m mobile-menu__item-link">Tooltip</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <script src="../../scripts/svg-sprite.js"></script>
+    <script src="../../components/mobile-menu/mobile-menu.js"></script>
+</body>
+</html>
