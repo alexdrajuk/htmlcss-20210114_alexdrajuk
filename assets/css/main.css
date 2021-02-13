@@ -1,6 +1,7 @@
 @import '../fonts/fonts.css';
 @import './normalize.css';
 @import './variables.scss';
+@import './typography.scss';
 
 @import './common.css';
 
