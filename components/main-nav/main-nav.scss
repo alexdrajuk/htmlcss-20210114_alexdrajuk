@@ -1,0 +1,25 @@
+.main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: var(--main-secondary-darken3);
+        &:hover {
+            color: var(--dark-primary)
+        }
+        &_active {
+            color: var(--dark-primary);
+        }
+    }
+}
