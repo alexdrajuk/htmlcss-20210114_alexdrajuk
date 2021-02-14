@@ -1,0 +1,15 @@
+.theme-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 124px;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        color: var(--main-secondary-darken3);
+        &_active {
+            color: var(--dark-primary);
+        }
+    }
+}
