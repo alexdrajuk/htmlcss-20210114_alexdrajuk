@@ -34,6 +34,12 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.528 2.283a3 3 0 014.037 1.058l.003.005 8.47 14.14.008.014a3 3 0 01-2.565 4.5H3.519a3 3 0 01-2.565-4.5l.008-.014 8.47-14.14.858.514-.855-.519a3 3 0 011.093-1.058zm.618 2.094L2.683 18.506A1 1 0 003.536 20h16.928a1 1 0 00.853-1.494L12.855 4.379l-.001-.002a1 1 0 00-1.708 0z" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 8a1 1 0 011 1v4a1 1 0 11-2 0V9a1 1 0 011-1zM12 15a1 1 0 011 1v.5a1 1 0 11-2 0V16a1 1 0 011-1z" />
             </symbol>
+            <symbol id="svg-sprite__sun" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 17a5 5 0 100-10 5 5 0 000 10zM12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="svg-sprite__moon" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79v0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
         </defs>
     </svg>
     `;
